@@ -22,7 +22,7 @@ export default function Home() {
           <div>
             <div className="columns">
                 <div className="column has-text-centered">
-                  <h1 className="title">Welcome {user.name}</h1><br />
+                  <h1 className="title" style={{textTransform: 'capitalize'}}>Welcome {userName}</h1><br />
                 </div>
             </div>
             <div id="app" className="row columns is-multiline">
