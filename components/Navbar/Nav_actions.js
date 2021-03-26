@@ -54,7 +54,7 @@ export default function Nav_actions() {
                 Log In
                 </a>
                 <a href="/api/auth/login" className="navbar-item">
-                Signed Up
+                Sign Up
                 </a>
             </div>
             </div>

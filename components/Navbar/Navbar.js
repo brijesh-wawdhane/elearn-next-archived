@@ -7,7 +7,7 @@ export default function Navbar() {
     
     return (
         <>
-        <nav className="navbar is-light" role="navigation" aria-label="main navigation">
+        <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="container">
                 <Nav_brand />
                 <Nav_actions />
