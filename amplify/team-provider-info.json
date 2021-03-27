@@ -10,6 +10,11 @@
       "StackName": "amplify-elearnnext-dev-184336",
       "StackId": "arn:aws:cloudformation:us-east-1:911756034838:stack/amplify-elearnnext-dev-184336/c3d88670-8ca2-11eb-bd23-12be65336f97",
       "AmplifyAppId": "dao0l0qc6rbus"
+    },
+    "categories": {
+      "auth": {
+        "elearnnextfac7f370": {}
+      }
     }
   }
 }

@@ -16,5 +16,13 @@
         }
       }
     }
+  },
+  "auth": {
+    "elearnnextfac7f370": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
   }
 }
