@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link'
 import { API } from 'aws-amplify'
-import { useUser } from '@auth0/nextjs-auth0';
 import { listPosts } from '../graphql/queries';
 
 export default function Lecture_cards() {
 
-  const { user, error, isLoading } = useUser();
-  let userName = user.name.substring(0, user.name.indexOf("@"));
   const [ posts, setPosts ] = useState([])
   useEffect(() => {
     fetchPosts()
@@ -25,7 +22,7 @@ export default function Lecture_cards() {
 
             <div className="columns">
                 <div className="column has-text-centered">
-                  <h1 className="title" style={{textTransform: 'capitalize'}}>Welcome {userName}</h1><br />
+                  <h1 className="title" style={{textTransform: 'capitalize'}}>Welcome name</h1><br />
                 </div>
             </div>
             
