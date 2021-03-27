@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function App({ Component, pageProps }) {
   return (
       <div>
-        <div className="container">
+        <div>
           <Component {...pageProps} />
         </div>
       </div>
