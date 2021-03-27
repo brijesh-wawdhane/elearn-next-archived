@@ -30,12 +30,12 @@ export default function Lecture_cards() {
             </div>
             
             <div id="app" className="row columns is-multiline">
-              <div className="column is-4">
 
                 {
                   posts.map((post, index) => (
                     <Link key={index} href={`/posts/${post.id}`}>
 
+                    <div className="column is-4">
                       <div className="card large mt-5">
                         <div className="card-content">
                           <div className="media">
@@ -45,12 +45,13 @@ export default function Lecture_cards() {
                           </div>
                         </div>
                       </div>
+                    </div>
 
                     </Link>
     ))
                 }
 
-              </div>
+
             </div>
 
           </div>
