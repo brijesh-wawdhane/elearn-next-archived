@@ -15,10 +15,10 @@ export default function Nav_actions() {
                 Account
             </a>
             <div className="navbar-dropdown">
-                <a href="/api/auth/login" className="navbar-item">
+                <a href="/profile" className="navbar-item">
                 Log In
                 </a>
-                <a href="/api/auth/login" className="navbar-item">
+                <a href="/profile" className="navbar-item">
                 Sign Up
                 </a>
             </div>

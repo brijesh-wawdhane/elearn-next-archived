@@ -1,11 +1,14 @@
 import '../styles/globals.css';
 import React from 'react';
 import '../configureAmplify'
+import Link from 'next/link'
 
 export default function App({ Component, pageProps }) {
   return (
-      <div className="">
-        <Component {...pageProps} />
+      <div>
+        <div className="container">
+          <Component {...pageProps} />
+        </div>
       </div>
   );
 }
