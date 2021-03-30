@@ -1,6 +1,6 @@
 {
   "api": {
-    "NextLearn": {
+    "NextApi": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -8,13 +8,34 @@
           "defaultAuthentication": {
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
-              "apiKeyExpirationDays": 365,
+              "apiKeyExpirationDays": 360,
               "description": "public"
             }
           },
-          "additionalAuthenticationProviders": []
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authamplifyelearnnext102b9005"
+              }
+            }
+          ]
         }
       }
+    }
+  },
+  "auth": {
+    "amplifyelearnnext102b9005": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "lectures": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
     }
   }
 }
